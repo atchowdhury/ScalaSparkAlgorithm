@@ -158,7 +158,7 @@ object Main {
   def main(args: Array[String]) = {
 
 
-    TrieNode.saveContact("Atique", "514-550-6300")
+    TrieNode.saveContact("Atique", "514-000-0000")
     TrieNode.saveContact("Atk", "438-237-2990")
     TrieNode.saveContact("Jack", "400-237-2990")
     TrieNode.saveContact("Jill", "900-237-000")
