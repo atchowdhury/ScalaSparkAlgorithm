@@ -55,7 +55,7 @@ object TrieNode {
   type nameNumber = (String, String)
   var nameTuple = scala.collection.mutable.ArrayBuffer.empty[(nameNumber)]
 
-  def nameSearch(name: String): Option[mutable.ArrayBuffer[nameNumber]] = {
+  def searchContact(name: String): Option[mutable.ArrayBuffer[nameNumber]] = {
     nameTuple.clear()
     var currentNode = rootNode
     for (i <- 0 to name.length - 1) {
@@ -168,9 +168,9 @@ object Main {
 
     println(if (TrieNode.deleteContact("AtkPP")) "Contact Deleted" else "Contact not found in DB")
 
-    TrieNode.printResult(TrieNode.nameSearch("AT"))
+    TrieNode.printResult(TrieNode.searchContact("AT"))
 
-    TrieNode.printResult(TrieNode.nameSearch("j"))
+    TrieNode.printResult(TrieNode.searchContact("j"))
 
 
   }
